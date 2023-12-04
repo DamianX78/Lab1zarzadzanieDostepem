@@ -1,0 +1,36 @@
+<!-- W tym pliku znajduje się szkielet strony do której są podpięte style z pliku .css -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Strona logowania</title>
+  <!-- Poniżej podpięcie stylów formatowania z pliku login.css -->
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<!-- Poniżej opis prostokąta na którym znajdują się okna z wpisaniem danych do logowania i porzyciskiem do logowania.  -->
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+
+    <p id="login-error-msg">Oops coś poszło nie tak. <span id="error-msg-second-line">Sprawdz dane logowania.</span></p>
+
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <!-- Dzięki typowi password zamiast liter pojawiaja się kropki podczas wpisywania -->
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+    
+  </main>
+
+<!-- Poniżej podpięcie pliku logowania .js -->
+<script type="text/javascript" src="login.js"></script>
+
+  
+</body>
+</html>
+
+
+

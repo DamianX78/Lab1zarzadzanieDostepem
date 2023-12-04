@@ -1,0 +1,90 @@
+/* Plik CSS zawiera style formatowania dla pliku html */
+
+html {
+
+    height: 100%;
+  }
+  /* Fragment kodu który zmienia wygląd strony */
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #3a4a3a;
+    background: linear-gradient(to top right, rgb(126, 209, 126), rgb(3, 61, 44))
+
+  }
+  /* Fragment kodu który modyfikuje wygląd pola z danymi logowania. */
+  #main-holder {
+    width: 40%;
+    height: 35%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(166, 199, 154);
+    background: linear-gradient(to top right, rgb(3, 61, 44), rgb(126, 209, 126));
+    border-radius: 8px;
+  }
+
+  
+  #login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+/* Poniżej styl dotyczący pojawiającego siębłędu logowania. Pierwsza i 2-ga linia (error-msg-second-line). */
+  #login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    border-radius: 8px;
+    background-color: #8fe59d;
+    opacity: 0;
+  }
+  
+  #error-msg-second-line {
+    display: block;
+  }
+  
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  /* Fragment kodu który zmienia ustawienia elementów klasy .login-form-field */
+  .login-form-field::placeholder {
+    color: rgb(218, 23, 23);
+  }
+  /* Jest to klasa która ustawia wygląd okienek na dane logowania */
+  .login-form-field {
+    border: none;
+    border-bottom: 2px solid #be3131;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  /* Fragment kodu który modyfikuje wygląd przycisku logowania */
+  #login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #be3131;
+    cursor: pointer;
+    outline: none;
+  }
